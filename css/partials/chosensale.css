@@ -1,0 +1,111 @@
+.chosensale {
+  width: 100%;
+  height: 815px;
+  margin-bottom: 20px;
+  /* background-color: #2b2b2b; */
+  display: flex;
+  justify-content: center;
+  .chosensale-center {
+    width: 85%;
+    height: inherit;
+    /* background-color: crimson; */
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    /* justify-content: center; */
+    .chosensale-center-top {
+      width: 100%;
+      height: 15%;
+      /* background-color: blue; */
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 7px;
+      h1 {
+        font-family: var(--fontfamily);
+        font-size: 20px;
+        line-height: 12px;
+        color: black;
+      }
+      img {
+        width: 22px;
+        height: 16px;
+        object-fit: cover;
+      }
+    }
+    .chosensale-center-bottom {
+      width: 100%;
+      height: calc(815px - 15%);
+      /* background-color: blue; */
+      display: flex;
+      flex-flow: column wrap;
+      .chosensale-center-bottom-item {
+        width: inherit;
+        height: 230px;
+        display: flex;
+        flex-flow: row wrap;
+        /* background-color: antiquewhite; */
+        .chosensale-center-bottom-item-product {
+          width: 214.85px;
+          height: 100%;
+          border: 1px solid rgba(211, 211, 211, 0.55);
+          display: flex;
+          flex-flow: column wrap;
+          img {
+            width: 132px;
+            height: 132px;
+            display: block;
+            margin: 15px auto;
+          }
+          .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row-reverse wrap;
+            font-size: 16px;
+            column-gap: 10px;
+            font-family: var(--fontNumber);
+            /* font-family: var(); */
+            .price-discount {
+              width: 32px;
+              height: 20px;
+              background-color: crimson;
+              border-radius: 10px;
+              padding: 0px 4px;
+              padding-left: 3px;
+              color: whitesmoke;
+              font-size: 14px;
+              font-family: var(--fontNumber);
+            }
+          }
+          .discount {
+            width: 100%;
+            text-decoration: line-through;
+            text-align: left;
+            padding-top: 15px;
+            padding-left: 17px;
+            color: lightgray;
+            font-size: 12px;
+            /* font-family: ; */
+            font-family: var(--fontNumber);
+          }
+        }
+      }
+    }
+  }
+}
+.bordertopless{
+  border-top: 0 !important;
+}
+.borderbotttomless{
+  border-bottom: 0 !important;
+}
+.borderrightless{
+  border-right: 0 !important;
+}
+.borderleftless{
+  border-left: 0 !important;
+}

@@ -1,0 +1,99 @@
+.digital {
+  width: 100%;
+  height: 420px;
+  /* background-color: cornflowerblue; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  .digital-center {
+    width: 85%;
+    height: inherit;
+    /* background-color: #acacac; */
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    .digital-center-item {
+      width: 25%;
+      height: inherit;
+      border-right: 1px solid lightgrey;
+      /* background-color: crimson; */
+      .digital-center-item-top {
+        width: 100%;
+        height: 80px;
+        /* background-color: brown; */
+        padding-right: 20px;
+        padding-top: 20px;
+        h1 {
+          font-size: 17px;
+          margin-bottom: 5px;
+          color: black;
+          font-family: var(--fontfamily);
+        }
+        h4 {
+          font-size: 11px;
+          margin-bottom: 5px;
+          color: grey;
+          font-family: var(--fontfamily);
+        }
+      }
+      .digital-center-item-bottom {
+        width: 100%;
+        height: calc(100% - px);
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        column-gap: 1px;
+        padding: 10px;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 10px;
+          display: block;
+          height: fit-content;
+          /* background-color: darkturquoise; */
+          img {
+            width: 110px;
+            height: 110px;
+            line-height: 110px;
+          }
+        }
+      }
+      .digital-center-item-more {
+        margin: 10px auto;
+        width: 90px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+        a {
+          text-decoration: none;
+          color: #19bfd3;
+          text-align: center;
+        }
+        img{
+           width: 20px;
+           height: 20px;
+        }
+      }
+    }
+  }
+}
+.borderLess {
+  border-right: none !important;
+}
+.borderBottom {
+  border-bottom: 1px solid lightgrey;
+}
+.borderRight {
+  border-right: 1px solid lightgrey;
+}
+.borderLeft {
+  border-left: 1px solid lightgrey;
+}

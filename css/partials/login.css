@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login {
+  width: 100%;
+  height: 725px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-center {
+    width: 410px;
+    height: 513px;
+    /* background-color: aqua; */
+    border: 1px solid rgba(211, 211, 211, 0.58);
+    border-radius: 10px;
+    .login-center-top {
+      width: 100%;
+      height: 25%;
+      /* background-color: chocolate; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100px;
+        height: 65px;
+        object-fit: contain;
+      }
+    }
+    .login-center-bottom {
+      width: 100%;
+      height: 75%;
+      /* background-color: darkslategrey; */
+      h1 {
+        font-size: 21px;
+        font-family: var(--fontfamily);
+        padding-top: 15px;
+        margin: 15px;
+        padding-right: 26px;
+      }
+      p {
+        font-size: 12px;
+        font-family: var(--fontfamily);
+        line-height: 20px;
+        color: rgb(82, 79, 79);
+        margin: 8px 15px;
+        padding-right: 26px;
+      }
+      [type="text"] {
+        width: 324px;
+        height: 47px;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid rgb(14, 180, 180);
+        border-radius: 10px;
+        display: block;
+        margin: 18px auto;
+        caret-color: rgb(44, 211, 211);
+        font-size: 20px;
+        padding: 10px 17px;
+      }
+      [type="button"] {
+        width: 318px;
+        height: 47px;
+        background-color: crimson;
+        outline: none;
+        border: none;
+        border-radius: 9px;
+        display: block;
+        display: block;
+        margin: 35px auto;
+        font-family: var(--fontfamily);
+        color: white;
+      }
+    }
+  }
+}
+.diffrent {
+  color: rgb(200, 13, 50) !important;
+  line-height: 0 !important;
+  font-size: 11.5px !important;
+  display: none;
+}
+.diffrent-2 {
+  font-size: 11px !important;
+  line-height: 0 !important;
+  a {
+    color: #0092bc !important;
+  }
+}
+input:focus-within + .diffrent {
+  display: block;
+}
+input:focus {
+  border: 1px solid crimson !important;
+}

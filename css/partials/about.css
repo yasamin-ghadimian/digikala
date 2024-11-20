@@ -1,0 +1,105 @@
+.about {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.272);
+  .about-center {
+    width: 90%;
+    height: inherit;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .about-center-right {
+      width: 70%;
+      height: inherit;
+      position: relative;
+      /* background-color: blueviolet; */
+      h1 {
+        font-family: var(--fontfamily);
+        font-size: 23px;
+        margin-top: 15px;
+        margin-bottom: 7px;
+      }
+      p {
+        font-family: var(--fontfamily);
+        line-height: 25px;
+        font-size: 11px;
+        color: rgb(137, 134, 134);
+        span {
+          opacity: 0.5;
+        }
+      }
+      .content {
+        display: none;
+      }
+    }
+    .color {
+      color: rgb(10, 173, 173)  !important;
+    }
+    #checkbox {
+      display: none;
+    }
+    #checkbox:checked ~ .content {
+      display: block;
+    }
+    #checkbox:checked ~ p {
+      span {
+        opacity: 1;
+      }
+    }
+    #checkbox:checked ~ label {
+      display: none;
+    }
+    label {
+      margin-top: 5px;
+      /* display: inline-block; */
+      cursor: pointer;
+      color: rgb(24, 184, 184);
+      font-family: var(--fontfamily);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      p {
+        color: rgb(24, 184, 184) !important;
+      }
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+      /* background-color: blueviolet; */
+    }
+    .about-center-left {
+      width: 30%;
+      height: inherit;
+      /* background-color: darkseagreen; */
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: start;
+      padding-top: 25px;
+      padding-right: 65px;
+      column-gap: 10px;
+      .about-center-left-item {
+        width: 108px;
+        height: 108px;
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 75px;
+          height: 75px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

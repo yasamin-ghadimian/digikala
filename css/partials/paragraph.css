@@ -1,0 +1,13 @@
+.paragraph {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+      /* width: 80%; */
+      font-size: 12px;
+      font-family: var(--fontfamily);
+      color: grey;
+  }
+}
